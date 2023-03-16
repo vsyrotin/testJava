@@ -1,11 +1,6 @@
 pipeline{
     agent local
 
-    tools {
-         maven 'mvn'
-         jdk 'java'
-    }
-
     stages{
         stage('build'){
             steps{
