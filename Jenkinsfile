@@ -11,5 +11,10 @@ pipeline{
                sh '''mvn package'''
             }
         }
+        stage('build'){
+            steps{
+               sh '''docker build -t my-java-app .'''
+            }
+        }
     }
 }
