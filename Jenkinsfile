@@ -13,7 +13,7 @@ pipeline{
         }
         stage('docker'){
             steps{
-               sh '''docker build -t my-java-app .'''
+               sh '''sudo docker build -t my-java-app .'''
             }
         }
     }
