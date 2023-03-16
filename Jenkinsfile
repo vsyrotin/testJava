@@ -1,6 +1,9 @@
 pipeline{
-    agent local
-
+    agent {
+        node {
+            label 'local' 
+        }
+    }
     stages{
         stage('build'){
             steps{
