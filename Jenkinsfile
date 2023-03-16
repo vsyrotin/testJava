@@ -2,7 +2,7 @@ pipeline{
     agent local
 
     tools {
-         maven 'maven'
+         maven 'mvn'
          jdk 'java'
     }
 
